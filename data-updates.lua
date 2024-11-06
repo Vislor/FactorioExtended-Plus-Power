@@ -26,6 +26,19 @@ if not data.raw["electric-pole"]["big-electric-pole"].next_upgrade then
     data.raw["electric-pole"]["big-electric-pole"].next_upgrade = "big-electric-pole-mk2"
 end
 
+-- substation
+if not data.raw["electric-pole"]["substation"].fast_replaceable_group then
+    data.raw["electric-pole"]["substation"].fast_replaceable_group = "electric-pole-2x2"
+    data.raw["electric-pole"]["substation-mk2"].fast_replaceable_group = "electric-pole-2x2"
+    data.raw["electric-pole"]["substation-mk3"].fast_replaceable_group = "electric-pole-2x2"
+else
+    data.raw["electric-pole"]["substation-mk2"].fast_replaceable_group = data.raw["electric-pole"]["substation"].fast_replaceable_group
+    data.raw["electric-pole"]["substation-mk3"].fast_replaceable_group = data.raw["electric-pole"]["substation"].fast_replaceable_group
+end
+if not data.raw["electric-pole"]["substation"].next_upgrade then
+    data.raw["electric-pole"]["substation"].next_upgrade = "substation-mk2"
+end
+
 --[[ 
 
 -- accumulator
@@ -42,18 +55,7 @@ if not data.raw["accumulator"]["accumulator"].next_upgrade then
     data.raw["accumulator"]["accumulator"].next_upgrade = "accumulator-mk2"
 end
 
--- substation
-if not data.raw["electric-pole"]["substation"].fast_replaceable_group then
-    data.raw["electric-pole"]["substation"].fast_replaceable_group = "electric-pole-2x2"
-    data.raw["electric-pole"]["substation-mk2"].fast_replaceable_group = "electric-pole-2x2"
-    data.raw["electric-pole"]["substation-mk3"].fast_replaceable_group = "electric-pole-2x2"
-else
-    data.raw["electric-pole"]["substation-mk2"].fast_replaceable_group = data.raw["electric-pole"]["substation"].fast_replaceable_group
-    data.raw["electric-pole"]["substation-mk3"].fast_replaceable_group = data.raw["electric-pole"]["substation"].fast_replaceable_group
-end
-if not data.raw["electric-pole"]["substation"].next_upgrade then
-    data.raw["electric-pole"]["substation"].next_upgrade = "substation-mk2"
-end
+
 
 -- boiler
 if not data.raw["boiler"]["boiler"].fast_replaceable_group then

@@ -113,10 +113,11 @@ data:extend(
                     type = "unlock-recipe",
                     recipe = "big-electric-pole-mk2"
                 },
-                --[[ {
+                {
                     type = "unlock-recipe",
                     recipe = "substation-mk2"
                 },
+                --[[ 
                 {
                     type = "unlock-recipe",
                     recipe = "steam-engine-mk2"
@@ -152,10 +153,11 @@ data:extend(
                     type = "unlock-recipe",
                     recipe = "big-electric-pole-mk3"
                 },
-                --[[ {
+                {
                     type = "unlock-recipe",
                     recipe = "substation-mk3"
                 },
+                --[[ 
                 {
                     type = "unlock-recipe",
                     recipe = "steam-engine-mk3"
