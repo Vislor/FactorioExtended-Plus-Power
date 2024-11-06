@@ -4,25 +4,25 @@ data:extend(
     type = "recipe",
     energy_required = 0.5,
     name = "big-electric-pole-mk2",
-    enabled = "false",
+    enabled = false,
     ingredients =
     {
-      {"big-electric-pole", 1},
-      {"electronic-circuit", 5}
+      {type = "item", name = "big-electric-pole", amount = 1},
+      {type = "item", name = "electronic-circuit", amount = 5}
     },
-    result = "big-electric-pole-mk2"
+    results = {{type = "item", name = "big-electric-pole-mk2", amount = 1}}
   },
   {
     type = "recipe",
     energy_required = 0.5,
     name = "big-electric-pole-mk3",
-    enabled = "false",
+    enabled = false,
     ingredients =
     {
-      {"big-electric-pole-mk2", 1},
-      {"advanced-circuit", 5}
+      {type = "item", name = "big-electric-pole-mk2", amount = 1},
+      {type = "item", name = "advanced-circuit", amount = 5}
     },
-    result = "big-electric-pole-mk3"
+    results = {{type = "item", name = "big-electric-pole-mk3", amount = 1}}
   },
   {
     type = "recipe",
@@ -31,10 +31,10 @@ data:extend(
     enabled = false,
     ingredients =
     {
-      {"medium-electric-pole", 1},
-      {"electronic-circuit", 2}
+      {type = "item", name = "medium-electric-pole", amount = 1},
+      {type = "item", name = "electronic-circuit", amount = 2}
     },
-    result = "medium-electric-pole-mk2"
+    results = {{type = "item", name = "medium-electric-pole-mk2", amount = 1}}
   },
   {
     type = "recipe",
@@ -43,9 +43,9 @@ data:extend(
     enabled = false,
     ingredients =
     {
-      {"medium-electric-pole-mk2", 1},
-      {"advanced-circuit", 1}
+      {type = "item", name = "medium-electric-pole-mk2", amount = 1},
+      {type = "item", name = "advanced-circuit", amount = 1}
     },
-    result = "medium-electric-pole-mk3"
+    results = {{type = "item", name = "medium-electric-pole-mk3", amount = 1}}
   }
 })

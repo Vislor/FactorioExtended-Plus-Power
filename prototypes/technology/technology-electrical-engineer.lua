@@ -1,6 +1,6 @@
 data:extend(
     {
-        {
+        --[[ {
             type = "technology",
             name = "solar-energy-2",
             icon_size = 256,
@@ -97,7 +97,7 @@ data:extend(
                 time = 30
             },
             order = "c-e-c"
-        },
+        }, ]]
         {
             type = "technology",
             name = "electrical-engineer",
@@ -107,15 +107,15 @@ data:extend(
             effects = {
                 {
                     type = "unlock-recipe",
-                    recipe = "substation-mk2"
+                    recipe = "medium-electric-pole-mk2"
                 },
                 {
                     type = "unlock-recipe",
                     recipe = "big-electric-pole-mk2"
                 },
-                {
+                --[[ {
                     type = "unlock-recipe",
-                    recipe = "medium-electric-pole-mk2"
+                    recipe = "substation-mk2"
                 },
                 {
                     type = "unlock-recipe",
@@ -124,7 +124,7 @@ data:extend(
                 {
                     type = "unlock-recipe",
                     recipe = "boiler-mk2"
-                }
+                } ]]
             },
             unit = {
                 count = 300,
@@ -146,15 +146,15 @@ data:extend(
             effects = {
                 {
                     type = "unlock-recipe",
-                    recipe = "substation-mk3"
+                    recipe = "medium-electric-pole-mk3"
                 },
                 {
                     type = "unlock-recipe",
                     recipe = "big-electric-pole-mk3"
                 },
-                {
+                --[[ {
                     type = "unlock-recipe",
-                    recipe = "medium-electric-pole-mk3"
+                    recipe = "substation-mk3"
                 },
                 {
                     type = "unlock-recipe",
@@ -163,7 +163,7 @@ data:extend(
                 {
                     type = "unlock-recipe",
                     recipe = "boiler-mk3"
-                }
+                } ]]
             },
             unit = {
                 count = 400,

@@ -1,17 +1,3 @@
--- accumulator
-if not data.raw["accumulator"]["accumulator"].fast_replaceable_group then
-    data.raw["accumulator"]["accumulator"].fast_replaceable_group = "accumulator"
-    data.raw["accumulator"]["accumulator-mk2"].fast_replaceable_group = "accumulator"
-    data.raw["accumulator"]["accumulator-mk3"].fast_replaceable_group = "accumulator"
-else
-    data.raw["accumulator"]["accumulator-mk2"].fast_replaceable_group = data.raw["accumulator"]["accumulator"].fast_replaceable_group
-    data.raw["accumulator"]["accumulator-mk3"].fast_replaceable_group = data.raw["accumulator"]["accumulator"].fast_replaceable_group
-end
-
-if not data.raw["accumulator"]["accumulator"].next_upgrade then
-    data.raw["accumulator"]["accumulator"].next_upgrade = "accumulator-mk2"
-end
-
 -- medium-electric-pole
 if not data.raw["electric-pole"]["medium-electric-pole"].fast_replaceable_group then
     data.raw["electric-pole"]["medium-electric-pole"].fast_replaceable_group = "medium-electric-pole"
@@ -38,6 +24,22 @@ end
 
 if not data.raw["electric-pole"]["big-electric-pole"].next_upgrade then
     data.raw["electric-pole"]["big-electric-pole"].next_upgrade = "big-electric-pole-mk2"
+end
+
+--[[ 
+
+-- accumulator
+if not data.raw["accumulator"]["accumulator"].fast_replaceable_group then
+    data.raw["accumulator"]["accumulator"].fast_replaceable_group = "accumulator"
+    data.raw["accumulator"]["accumulator-mk2"].fast_replaceable_group = "accumulator"
+    data.raw["accumulator"]["accumulator-mk3"].fast_replaceable_group = "accumulator"
+else
+    data.raw["accumulator"]["accumulator-mk2"].fast_replaceable_group = data.raw["accumulator"]["accumulator"].fast_replaceable_group
+    data.raw["accumulator"]["accumulator-mk3"].fast_replaceable_group = data.raw["accumulator"]["accumulator"].fast_replaceable_group
+end
+
+if not data.raw["accumulator"]["accumulator"].next_upgrade then
+    data.raw["accumulator"]["accumulator"].next_upgrade = "accumulator-mk2"
 end
 
 -- substation
@@ -93,3 +95,4 @@ end
 if not data.raw["solar-panel"]["solar-panel"].next_upgrade then
     data.raw["solar-panel"]["solar-panel"].next_upgrade = "solar-panel-mk2"
 end
+ ]]
