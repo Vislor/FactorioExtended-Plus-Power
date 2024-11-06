@@ -6,35 +6,29 @@
 local mk2 = table.deepcopy(data.raw["boiler"]["boiler"])
 mk2.name = "boiler-mk2"
 mk2.icon = "__FactorioExtended-Plus-Power__/graphics/icons/" .. mk2.name .. ".png"
-mk2.icon_size = 64
-mk2.icon_mipmaps = 4
 mk2.minable.result = mk2.name
 mk2.max_health = 300
 mk2.energy_consumption = "3.6MW"
-mk2.energy_source.emissions_per_minute = 25
+mk2.energy_source.emissions_per_minute.pollution = 25
 mk2.next_upgrade = "boiler-mk3"
 
 for _, direction in pairs({"north", "east", "south", "west"}) do
     local short = string.upper(string.sub(direction, 1, 1))
-    mk2.structure[direction].layers[1].filename = "__FactorioExtended-Plus-Power__/graphics/entity/" .. mk2.name .. "/boiler-" .. short .. "-idle.png"
-    mk2.structure[direction].layers[1].hr_version.filename = "__FactorioExtended-Plus-Power__/graphics/entity/" .. mk2.name .. "/hr-boiler-" .. short .. "-idle.png"
+    mk2.pictures[direction].structure.layers[1].filename = "__FactorioExtended-Plus-Power__/graphics/entity/" .. mk2.name .. "/boiler-" .. short .. "-idle.png"
 end
 
 local mk3 = table.deepcopy(data.raw["boiler"]["boiler"])
 mk3.name = "boiler-mk3"
 mk3.icon = "__FactorioExtended-Plus-Power__/graphics/icons/" .. mk3.name .. ".png"
-mk3.icon_size = 64
-mk3.icon_mipmaps = 4
 mk3.minable.result = mk3.name
 mk3.max_health = 600
 mk3.energy_consumption = "7.2MW"
-mk3.energy_source.emissions_per_minute = 20
+mk3.energy_source.emissions_per_minute.pollution = 20
 mk2.next_upgrade = nil
 
 for _, direction in pairs({"north", "east", "south", "west"}) do
     local short = string.upper(string.sub(direction, 1, 1))
-    mk3.structure[direction].layers[1].filename = "__FactorioExtended-Plus-Power__/graphics/entity/" .. mk3.name .. "/boiler-" .. short .. "-idle.png"
-    mk3.structure[direction].layers[1].hr_version.filename = "__FactorioExtended-Plus-Power__/graphics/entity/" .. mk3.name .. "/hr-boiler-" .. short .. "-idle.png"
+    mk3.pictures[direction].structure.layers[1].filename = "__FactorioExtended-Plus-Power__/graphics/entity/" .. mk3.name .. "/boiler-" .. short .. "-idle.png"
 end
 
 data:extend({mk2, mk3})

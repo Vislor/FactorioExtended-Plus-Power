@@ -3,53 +3,53 @@ data:extend(
   {
     type = "recipe",
     name = "steam-engine-mk2",
-    enabled = "false",
+    enabled = false,
     ingredients =
     {
-      {"steam-engine", 2},
-      {"engine-unit", 2},
-      {"titanium-alloy", 15},
-      {"advanced-circuit", 5}
+      {type = "item", name = "steam-engine", amount = 2},
+      {type = "item", name = "engine-unit", amount = 2},
+      {type = "item", name = "titanium-alloy", amount = 15},
+      {type = "item", name = "advanced-circuit", amount = 5}
     },
-    result = "steam-engine-mk2"
+    results = {{type = "item", name = "steam-engine-mk2", amount = 1}}
   },
   {
     type = "recipe",
     name = "steam-engine-mk3",
     energy_required = 1,
-    enabled = "false",
+    enabled = false,
     ingredients =
     {
-      {"steam-engine-mk2", 2},
-      {"titanium-alloy", 25},
-      {"processing-unit", 5}
+      {type = "item", name = "steam-engine-mk2", amount = 2},
+      {type = "item", name = "titanium-alloy", amount = 25},
+      {type = "item", name = "processing-unit", amount = 5}
     },
-    result = "steam-engine-mk3"
+    results = {{type = "item", name = "steam-engine-mk3", amount = 1}}
   },
   {
     type = "recipe",
     name = "boiler-mk2",
     energy_required = 5,
-    enabled = "false",
+    enabled = false,
     ingredients =
     {
-      {"boiler", 2},
-      {"titanium-alloy", 15},
-      {"advanced-circuit", 5}
+      {type = "item", name = "boiler", amount = 2},
+      {type = "item", name = "titanium-alloy", amount = 15},
+      {type = "item", name = "advanced-circuit", amount = 5}
     },
-    result = "boiler-mk2"
+    results = {{type = "item", name = "boiler-mk2", amount = 1}}
   },
   {
     type = "recipe",
     name = "boiler-mk3",
     energy_required = 8,
-    enabled = "false",
+    enabled = false,
     ingredients =
     {
-      {"boiler-mk2", 2},
-      {"titanium-alloy", 25},
-      {"processing-unit", 5}
+      {type = "item", name = "boiler-mk2", amount = 2},
+      {type = "item", name = "titanium-alloy", amount = 25},
+      {type = "item", name = "processing-unit", amount = 5}
     },
-    result = "boiler-mk3"
+    results = {{type = "item", name = "boiler-mk3", amount = 1}}
   }
 })

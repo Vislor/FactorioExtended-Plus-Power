@@ -117,7 +117,6 @@ data:extend(
                     type = "unlock-recipe",
                     recipe = "substation-mk2"
                 },
-                --[[ 
                 {
                     type = "unlock-recipe",
                     recipe = "steam-engine-mk2"
@@ -125,7 +124,7 @@ data:extend(
                 {
                     type = "unlock-recipe",
                     recipe = "boiler-mk2"
-                } ]]
+                }
             },
             unit = {
                 count = 300,
@@ -157,7 +156,6 @@ data:extend(
                     type = "unlock-recipe",
                     recipe = "substation-mk3"
                 },
-                --[[ 
                 {
                     type = "unlock-recipe",
                     recipe = "steam-engine-mk3"
@@ -165,7 +163,7 @@ data:extend(
                 {
                     type = "unlock-recipe",
                     recipe = "boiler-mk3"
-                } ]]
+                }
             },
             unit = {
                 count = 400,

@@ -39,24 +39,6 @@ if not data.raw["electric-pole"]["substation"].next_upgrade then
     data.raw["electric-pole"]["substation"].next_upgrade = "substation-mk2"
 end
 
---[[ 
-
--- accumulator
-if not data.raw["accumulator"]["accumulator"].fast_replaceable_group then
-    data.raw["accumulator"]["accumulator"].fast_replaceable_group = "accumulator"
-    data.raw["accumulator"]["accumulator-mk2"].fast_replaceable_group = "accumulator"
-    data.raw["accumulator"]["accumulator-mk3"].fast_replaceable_group = "accumulator"
-else
-    data.raw["accumulator"]["accumulator-mk2"].fast_replaceable_group = data.raw["accumulator"]["accumulator"].fast_replaceable_group
-    data.raw["accumulator"]["accumulator-mk3"].fast_replaceable_group = data.raw["accumulator"]["accumulator"].fast_replaceable_group
-end
-
-if not data.raw["accumulator"]["accumulator"].next_upgrade then
-    data.raw["accumulator"]["accumulator"].next_upgrade = "accumulator-mk2"
-end
-
-
-
 -- boiler
 if not data.raw["boiler"]["boiler"].fast_replaceable_group then
     data.raw["boiler"]["boiler"].fast_replaceable_group = "boiler"
@@ -82,6 +64,22 @@ else
 end
 if not data.raw["generator"]["steam-engine"].next_upgrade then
     data.raw["generator"]["steam-engine"].next_upgrade = "steam-engine-mk2"
+end
+
+--[[ 
+
+-- accumulator
+if not data.raw["accumulator"]["accumulator"].fast_replaceable_group then
+    data.raw["accumulator"]["accumulator"].fast_replaceable_group = "accumulator"
+    data.raw["accumulator"]["accumulator-mk2"].fast_replaceable_group = "accumulator"
+    data.raw["accumulator"]["accumulator-mk3"].fast_replaceable_group = "accumulator"
+else
+    data.raw["accumulator"]["accumulator-mk2"].fast_replaceable_group = data.raw["accumulator"]["accumulator"].fast_replaceable_group
+    data.raw["accumulator"]["accumulator-mk3"].fast_replaceable_group = data.raw["accumulator"]["accumulator"].fast_replaceable_group
+end
+
+if not data.raw["accumulator"]["accumulator"].next_upgrade then
+    data.raw["accumulator"]["accumulator"].next_upgrade = "accumulator-mk2"
 end
 
 -- solar-panel
