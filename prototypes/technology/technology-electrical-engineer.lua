@@ -1,54 +1,6 @@
 data:extend(
     {
-        --[[ {
-            type = "technology",
-            name = "solar-energy-2",
-            icon_size = 256,
-            icon = "__base__/graphics/technology/solar-energy.png",
-            effects = {
-                {
-                    type = "unlock-recipe",
-                    recipe = "solar-panel-mk2"
-                }
-            },
-            prerequisites = {"solar-energy", "advanced-electronics", "titanium-processing"},
-            unit = {
-                count = 350,
-                ingredients = {
-                    {"automation-science-pack", 1},
-                    {"logistic-science-pack", 1},
-                    {"chemical-science-pack", 1},
-                    {"production-science-pack", 1}
-                },
-                time = 30
-            },
-            order = "a-h-d"
-        },
-        {
-            type = "technology",
-            name = "solar-energy-3",
-            icon_size = 256,
-            icon = "__base__/graphics/technology/solar-energy.png",
-            effects = {
-                {
-                    type = "unlock-recipe",
-                    recipe = "solar-panel-mk3"
-                }
-            },
-            prerequisites = {"solar-energy-2", "advanced-electronics-2"},
-            unit = {
-                count = 350,
-                ingredients = {
-                    {"automation-science-pack", 1},
-                    {"logistic-science-pack", 1},
-                    {"chemical-science-pack", 1},
-                    {"production-science-pack", 1},
-                    {"utility-science-pack", 1}
-                },
-                time = 30
-            },
-            order = "a-h-e"
-        },
+        --[[ 
         {
             type = "technology",
             name = "electric-energy-accumulators-2",
@@ -98,6 +50,55 @@ data:extend(
             },
             order = "c-e-c"
         }, ]]
+        {
+            type = "technology",
+            name = "solar-energy-2",
+            icon_size = 256,
+            icon = "__base__/graphics/technology/solar-energy.png",
+            effects = {
+                {
+                    type = "unlock-recipe",
+                    recipe = "solar-panel-mk2"
+                }
+            },
+            prerequisites = {"solar-energy", "advanced-circuit", "titanium-processing"},
+            unit = {
+                count = 350,
+                ingredients = {
+                    {"automation-science-pack", 1},
+                    {"logistic-science-pack", 1},
+                    {"chemical-science-pack", 1},
+                    {"production-science-pack", 1}
+                },
+                time = 30
+            },
+            order = "a-h-d"
+        },
+        {
+            type = "technology",
+            name = "solar-energy-3",
+            icon_size = 256,
+            icon = "__base__/graphics/technology/solar-energy.png",
+            effects = {
+                {
+                    type = "unlock-recipe",
+                    recipe = "solar-panel-mk3"
+                }
+            },
+            prerequisites = {"solar-energy-2", "processing-unit"},
+            unit = {
+                count = 350,
+                ingredients = {
+                    {"automation-science-pack", 1},
+                    {"logistic-science-pack", 1},
+                    {"chemical-science-pack", 1},
+                    {"production-science-pack", 1},
+                    {"utility-science-pack", 1}
+                },
+                time = 30
+            },
+            order = "a-h-e"
+        },
         {
             type = "technology",
             name = "electrical-engineer",

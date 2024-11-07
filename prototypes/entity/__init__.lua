@@ -1,7 +1,7 @@
 require("boiler")
 require("steam-engine")
 --require("accumulator")
---require("solar-panel")
+require("solar-panel")
 require("medium-electric-pole")
 require("big-electric-pole")
 require("substation")

@@ -14,9 +14,9 @@ end
 
 local items = {
     --[[ {source = "accumulator", name = "accumulator-mk2", subgroup = "fb-energy-production", order = "a[accumulator-mk2]-c", icon_name = "accumulator-mk2.png"},
-    {source = "accumulator", name = "accumulator-mk3", subgroup = "fb-energy-production", order = "a[accumulator-mk3]-d", icon_name = "accumulator-mk3.png"},
+    {source = "accumulator", name = "accumulator-mk3", subgroup = "fb-energy-production", order = "a[accumulator-mk3]-d", icon_name = "accumulator-mk3.png"}, ]]
     {source = "solar-panel", name = "solar-panel-mk2", subgroup = "fb-energy-production", order = "a[solar-panel-mk2]-a", icon_name = "solar-panel-mk2.png"},
-    {source = "solar-panel", name = "solar-panel-mk3", subgroup = "fb-energy-production", order = "a[solar-panel-mk3]-b", icon_name = "solar-panel-mk3.png"}, ]]
+    {source = "solar-panel", name = "solar-panel-mk3", subgroup = "fb-energy-production", order = "a[solar-panel-mk3]-b", icon_name = "solar-panel-mk3.png"},
     {source = "boiler", name = "boiler-mk2", subgroup = "fb-energy-production", order = "a-f-a", icon_name = "boiler-mk2.png"},
     {source = "boiler", name = "boiler-mk3", subgroup = "fb-energy-production", order = "a-f-a", icon_name = "boiler-mk3.png"},
     {source = "steam-engine", name = "steam-engine-mk2", subgroup = "fb-energy-production", order = "a-e-a", icon_name = "steam-engine-mk2.png"},
