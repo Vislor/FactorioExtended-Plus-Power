@@ -1,6 +1,5 @@
 data:extend(
     {
-        --[[ 
         {
             type = "technology",
             name = "electric-energy-accumulators-2",
@@ -49,7 +48,7 @@ data:extend(
                 time = 30
             },
             order = "c-e-c"
-        }, ]]
+        },
         {
             type = "technology",
             name = "solar-energy-2",

@@ -80,8 +80,6 @@ if not data.raw["solar-panel"]["solar-panel"].next_upgrade then
     data.raw["solar-panel"]["solar-panel"].next_upgrade = "solar-panel-mk2"
 end
 
---[[ 
-
 -- accumulator
 if not data.raw["accumulator"]["accumulator"].fast_replaceable_group then
     data.raw["accumulator"]["accumulator"].fast_replaceable_group = "accumulator"
@@ -95,6 +93,3 @@ end
 if not data.raw["accumulator"]["accumulator"].next_upgrade then
     data.raw["accumulator"]["accumulator"].next_upgrade = "accumulator-mk2"
 end
-
-
- ]]
